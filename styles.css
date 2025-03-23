@@ -1,0 +1,157 @@
+body {
+  background: linear-gradient(0deg, rgba(223,249,247,1) 0%, rgba(255,255,255,1) 100%);
+  border-radius: 20px;
+}
+
+.floating-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.generative-button {
+  font-size: 16px;
+  padding: 2px 3px 3px 4px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Estilização do popup de opções */
+.popup-container {
+  position: absolute;
+  padding: 5px;
+  background: linear-gradient(0deg, rgba(223,249,247,1) 0%, rgba(255,255,255,1) 100%);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1000;
+  margin-top: 5px;
+}
+
+.popup-container button {
+  display: block;
+  width: 100%;
+  margin: 2px 0;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  background: white;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 300;
+  color: #373739;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup-container button:hover{
+  background: #00D6C3;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.widget-container {
+  background: transparent;
+  width: 120px;
+  padding: 10px;
+  z-index: 1000;
+  border-radius: 5px;
+  color: #373739;
+}
+
+.widget-container button {
+  display: block;
+  margin: 5px 0;
+  width: 100%;
+  color: rgb(55, 55, 57);
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.widget-container button:hover {
+  background: #00D6C3;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 16px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 3px;
+    bottom: 2.3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #00D6C3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #00D6C3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
