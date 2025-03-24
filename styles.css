@@ -1,4 +1,4 @@
-body {
+.widget-body {
   background: linear-gradient(0deg, rgba(223,249,247,1) 0%, rgba(255,255,255,1) 100%);
   border-radius: 20px;
 }
@@ -28,7 +28,6 @@ body {
   cursor: pointer;
 }
 
-/* Estilização do popup de opções */
 .popup-container {
   position: absolute;
   padding: 5px;
@@ -93,7 +92,6 @@ body {
   transition: .3s;
 }
 
-/* The switch - the box around the slider */
 .switch {
     position: relative;
     display: inline-block;
@@ -101,14 +99,12 @@ body {
     height: 16px;
   }
   
-  /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
   
-  /* The slider */
   .slider {
     position: absolute;
     cursor: pointer;
@@ -147,7 +143,6 @@ body {
     transform: translateX(10px);
   }
   
-  /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
   }

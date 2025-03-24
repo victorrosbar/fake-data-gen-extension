@@ -38,7 +38,7 @@ function addGenerateButton(target) {
 }
 
 function removeGenerateButton(target) {
-    let button = target.parentNode.querySelector(".generate-button");
+    let button = target.parentNode.querySelector(".generative-button");
     if (button) {
         button.remove();
     }

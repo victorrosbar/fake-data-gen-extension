@@ -60,7 +60,7 @@ function toggleActiveApplication() {
     let newState = activeSwitch.checked;
 
     chrome.storage.local.set({ key: { extensionState: newState } }, () => {
-        renderApplication(); // Atualiza a interface somente após salvar o novo estado
+        renderApplication();
     });
 }
 
