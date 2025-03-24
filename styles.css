@@ -26,6 +26,14 @@
   border: none;
   background-color: white;
   cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.generative-button button:hover {
+  background-color: #00D6C3;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .popup-container {
