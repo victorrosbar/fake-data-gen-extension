@@ -3,8 +3,7 @@
     "name": "Gerador de Dados Fictícios",
     "version": "0.0.1",
     "description": "Gera dados fictícios válidos de CPF, CNPJ, telefone e email para testes.",
-    "permissions": ["clipboardWrite", "storage"],
-    "host_permissions": ["<all_urls>"] ,
+    "permissions": ["clipboardWrite", "storage", "activeTab"],
     "background": {
       "service_worker": "background.js"
     },

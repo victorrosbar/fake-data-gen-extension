@@ -2,6 +2,7 @@ document.addEventListener("focusin", (event) => {
     chrome.storage.local.get(["key"], (result) => {
         const extensionState = result.key.extensionState;
         if (extensionState && (event.target.tagName === "INPUT" || event.target.tagName === "TEXTAREA")) {
+            removeGenerateButton(event.target);
             addGenerateButton(event.target);
         }
     });
@@ -30,7 +31,7 @@ function addGenerateButton(target) {
 
     wrapper.appendChild(button);
 
-    button.addEventListener("click", (event) => {
+    button.addEventListener("click", (event) => {            
         event.preventDefault();
         event.stopPropagation();
         showPopup(target, button);
@@ -45,6 +46,8 @@ function removeGenerateButton(target) {
 }
 
 function showPopup(target, button) {
+    document.querySelectorAll(".popup-container").forEach(popup => popup.remove());
+
     let popup = document.createElement("div");
     popup.classList.add("popup-container");
     popup.style.position = "absolute";
